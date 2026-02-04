@@ -1,0 +1,368 @@
+
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    font-size: 15px;
+
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin-right: 20px;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4DB6AC;
+    text-decoration: underline;
+}
+
+header>img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.section1 {
+    width: 100%;
+    background-image: url(./img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    color: aliceblue;
+
+
+}
+
+.section1>h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.section1>p {
+    margin: 2px;
+}
+
+.section2>.cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.section2 .card {
+    background-color: #0A192F;
+    font-size: 15px;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding: 7px;
+
+}
+
+.section2 .card p {
+    font-size: 14px;
+    text-align: center;
+}
+svg{
+    text-align: center;
+    width: 100%;
+}
+button {
+    background-color: #429b92;
+    border-radius: 10px;
+    height: 26px;
+    color: azure;
+    margin: 5px;
+    font-size: 13px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+aside {
+    margin: 30px 100px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section3 {
+    display: flex;
+    font-size: 14px;
+    gap: 40px;
+}
+
+.section3>img {
+    width: 30%;
+    height: 30%;
+}
+
+.section3 h1 {
+    margin-top: 0px;
+    font-size: 17px;
+    color: #429b92;
+
+}
+
+.section3 p {
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+.section4 .cards {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.section4 .cards .card {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    width: 20%;
+    text-align: center;
+
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section4 .cards .card h2 {
+    font-size: 15px;
+    color: #3a8981;
+    margin-bottom: 5px;
+
+}
+
+.section4 .cards .card p {
+    font-size: 12px;
+}
+
+section {
+    margin: 20px 0px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    header {
+        padding: 12px;
+    }
+
+    .section1 {
+        height: 260px;
+    }
+
+    .section2 .card,
+    .section4 .cards .card {
+        width: 22%;
+        padding: 10px;
+    }
+
+    aside {
+        margin: 20px 40px;
+    }
+
+    .section3 {
+        gap: 20px;
+    }
+
+    .section3>img {
+        width: 35%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    ul {
+        gap: 10px;
+        margin-right: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section1>h1 {
+        font-size: 22px;
+    }
+
+    .section2>.cards {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .section2 .card {
+        width: 45%;
+        margin: 6px 0;
+    }
+
+    .section4 .cards {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .section4 .cards .card {
+        width: 45%;
+        text-align: left;
+        padding: 10px;
+    }
+
+    aside {
+        margin: 20px 30px;
+    }
+
+    .section3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .section3>img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 8px;
+    }
+
+    header>img {
+        width: 48px;
+        height: 48px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 8px;
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .section1 {
+        height: 200px;
+        padding: 10px;
+    }
+
+    .section1>h1 {
+        font-size: 20px;
+    }
+
+    .section2>.cards {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .section2 .card  {
+        width: 92%;
+    }
+    .section2 .card  {
+        text-align: center;
+    }
+    .section4 .cards {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .section4 .cards .card {
+        width: 100%;
+        text-align: left;
+    }
+
+    aside {
+        margin: 16px 12px;
+    }
+
+    .section3 {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .section3>img {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        width: 100%;
+        max-width: 320px;
+        height: 40px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+
+    /* Disable hover blur/scale on touch devices */
+    .cards .card {
+        transition: none;
+    }
+
+    .cards:hover .card:not(:hover) {
+        filter: none;
+        transform: none;
+    }
+
+    .cards .card:hover {
+        transform: none;
+    }
+}
+
+/* Prefer to disable hover effects on devices without hover capability */
+@media (hover: none) {
+    .cards .card {
+        transition: none;
+    }
+
+    .cards:hover .card:not(:hover) {
+        filter: none;
+        transform: none;
+    }
+
+    .cards .card:hover {
+        transform: none;
+    }
+}
